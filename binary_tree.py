@@ -1,4 +1,4 @@
-import os
+''' 포화 이진 트리 '''
 
 number = 100
 
