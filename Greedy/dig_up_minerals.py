@@ -26,12 +26,12 @@ while q:
             break
     digs.append([usedDia, usedIron, usedStone])
 
-# digs.sort(key = lambda x : [x[2], x[1], x[0]])
+digs.sort(key = lambda x : [x[2], x[1], x[0]])
 
 result = 0
 for idx, pick in enumerate(picks):
     for _ in range(pick):
         if digs:
-            result += digs.pop(0)[idx]
+            result += digs.pop()[idx]
 
 print(result)
