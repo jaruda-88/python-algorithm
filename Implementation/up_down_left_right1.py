@@ -1,7 +1,9 @@
 ''' 상하좌우 알고리즘 '''
 
-park = ["OSO", "OOO", "OXO", "OOO"]
-routes = ["E 2", "S 3", "W 1"]
+park = ["OSO", "OOO", "OXO", "OOO"] # 정사각형 좌측상단 0, 0 이라면 우측 하단은 H - 1, W - 1
+routes = ["E 2", "S 3", "W 1"]      # ex) 동쪽으로 2칸, 남쪽으로 3칸, 서쪽으로 1칸
+
+
 ditections = {"E": (0, 1), "W": (0, -1), "S": (1, 0), "N": (-1, 0)}
 
 height, width = len(park), len(park[0])
