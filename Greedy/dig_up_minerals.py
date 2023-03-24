@@ -33,5 +33,8 @@ for idx, pick in enumerate(picks):
     for _ in range(pick):
         if digs:
             result += digs.pop()[idx]
-
+        else:
+            break
+    if not digs:
+        break
 print(result)
