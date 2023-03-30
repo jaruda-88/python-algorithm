@@ -14,16 +14,20 @@ height = len(input) - 1
 def check(col_idx:int, row_idx:int):
     result = 2
 
-    if col_idx == 0 and row_idx == 0:
+    if col_idx == 0 and row_idx == 0 or row_idx == width:
         return result
-    elif col_idx == height and row_idx == 0:
+    elif col_idx == height and row_idx == 0 or row_idx == width:
         return result
-    else:
+    elif col_idx > 0 and col_idx < height:
         return result + 2
+    else:
+        return result + 1
 
-for idx1, val1  in enumerate(input):
+for idx1, val1 in enumerate(input):
     
     count = 0
-    row = ''.join(val1)
-    
+    row = ''.join(val1).replace(' ', '')
+    for idx2 in range(len(row)):
+        v1 = check(idx1, idx2)
+        print(v1)
     
