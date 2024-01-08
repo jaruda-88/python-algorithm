@@ -60,5 +60,7 @@ while col < height:
     col += 1
 
 endTime = time.time()
+
 print(result[maxCount])
+
 print(endTime - starttime)
