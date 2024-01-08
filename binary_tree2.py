@@ -21,13 +21,18 @@ flag = True
 bnum = bin(num)[2:]
 cnt = 1
 temp = 2**cnt-1
+
 while temp < len(bnum):
     cnt += 1
     temp = 2**cnt-1
+
 bnum = '0' * (temp - len(bnum)) + bnum
+
 check(bnum)
+
 if flag:
     result = 1
 else:
     result = 0
+
 print(result)
