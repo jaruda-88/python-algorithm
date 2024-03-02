@@ -14,4 +14,5 @@ for coin in coins:
     print(f"{coin} : {item}")
     N %= coin
 
-print("ALL : %s" % count)
+print("all : %s" % count)
+
